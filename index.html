@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+<p>Speel Guess the Number</p>
+
+<button onclick="myFunction()">Name</button>
+
+<p id="demo"></p>
+
+<body>
+    <script>
+
+        function myFunction() {
+            let person = prompt('Please enter your name', '');
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+                    "Hello " + person + " Lets play Guess the number";
+            }
+
+            const min = 1;
+            const max = 25;
+
+            const guessNumber = Math.floor(Math.random() * (max - + 1)) + min;
+            let guess = prompt("Hey " + naam + ", give a number between 0 - 25 " + guessNumber);
+            console.log(quess);
+            if (guess != guessNumber) {
+                alert("Sorry, try again");
+            } else {
+                alert("Congrats, you won!");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
